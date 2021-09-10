@@ -1,0 +1,25 @@
+@keyframes thai{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.header__titulo--aparezca{
+	animation-duration: 3s;
+	animation-name: thai;
+}
+.maspro__card--sombrear{
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.contacto__img--aumentar:hover{
+	transform: scale(1.1);
+	transition: transform 3s;
+}

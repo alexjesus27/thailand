@@ -1,0 +1,22 @@
+div{
+	ul{
+		li{
+			color: rgb(177, 245, 232);
+			margin: $margen-t;
+			list-style: none;
+			display: inline-block;	
+		}
+	}
+}
+
+article{
+		ul{
+			li{
+				color: rgb(177, 245, 232);
+				margin: 6px;
+				list-style: none;
+				display: inline-block;
+			}
+
+		}
+}

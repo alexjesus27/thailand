@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Thailand ice cream rolls</title>
+	<meta name="description" content="Helados elaborados en plancha y lo mejor es que lo podemos elaborar a tu gusto" >
+	<meta name="keywords" content="Helados, recomendados, sabor, gusto mas, origen">
+	<meta name="author" content="Alexis">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body>
+		<!-- incia nav -->
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html"><img class=" wow bounceInLeft w-50" src="imagenes/logo.png" alt="Thailand ice cream rolls"></a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 wow fadeInDownBig">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="sabores.html">Sabores</a>
+	        </li>
+	        <li class="nav-item dropdown">
+	          <a class="nav-link dropdown-toggle" href="promociones.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	            Promociones
+	          </a>
+	          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	            <li><a class="dropdown-item" href="promociones.html#promo1">2x1</a></li>
+	            <li><a class="dropdown-item" href="promociones.html#promo2">Cumpleaños</a></li>
+	            <li><a class="dropdown-item" href="promociones.html#promo3">Helado gratis</a></li>
+	            <li><a class="dropdown-item" href="promociones.html#promo4">Helado a tu gusto</a></li>
+	          </ul>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="nosotros.html">Nosotros</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="contacto.html">Contacto</a>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<!-- cierra nav -->
+
+	<!-- inicia header -->
+	<header class="headerI__fondo mb-3">
+
+		<h1 class=" header__titulo header__titulo--aparezca">Thailand ice cream rolls</h1>
+	</header>
+
+	<!-- cierra header -->
+
+	<!-- inicia main -->
+
+	<main class="container mb-3">
+		<h2 class="textoCentrado">Helados recomendados</h2>
+		<section class="row">
+			<article class="col-lg-4 mb-md-3 wow pulse">
+				<div class="card w-75 maspro__card--sombrear">
+				  <a href="sabores.html#addictive"><img src="imagenes/addictive_cream.png" class="card-img-top" alt="Sabor a oreo con limón"></a>
+				  <div class="card-body">
+				    <p class="textoCentrado">Addictive cream</p>
+				  </div>
+				</div>
+			</article>
+			<article class="col-lg-4 mb-md-3 wow pulse">
+				<div class="card w-75 maspro__card--sombrear">
+				  <a href="sabores.html#kiwi"><img src="imagenes/kiwi_sensation.png" class="card-img-top" alt="Sabor a kiwi con pistacho"></a>
+				  <div class="card-body">
+				    <p class="textoCentrado" >Kiwi sensation</p>
+				  </div>
+				</div>
+			</article>
+			<article class="col-lg-4 mb-md-3 wow pulse">
+				<div class="card w-75 maspro__card--sombrear">
+				  <a href="sabores.html#fresh"><img src="imagenes/fresh_blueberry.png" class="card-img-top" alt="Sabor a Arándano con frambuesa"></a>
+				  <div class="card-body">
+				    <p class="textoCentrado">Fresh blueberry</p>
+				  </div>
+				</div>
+			</article>
+		</section>	
+	</main>
+
+	<!-- cierra main -->
+
+	<!-- inicia formulario -->
+	<div class="container-fluid  mb-3">
+		<div class="row">
+			<div class="col-lg-8 textoCentrado formulario__fondo">
+				<h3>¿Que sabor te gusto mas?</h3>
+				<form action="envio.php" method="post">
+					<fieldset>
+						<label for="">Addictive cream</label>
+						<input type="checkbox" name="helado1" value="helado1">
+						<label for="">Kiwi sensation</label>
+						<input type="checkbox" name="helado2" value="helado2">
+						<label for="">Mint Chocolate</label>
+						<input type="checkbox" name="helado3" value="helado3">
+						<br>
+						<label for="">Crazy banana</label>
+						<input type="checkbox" name="helado4" value="helado4">
+						<label for="">Strawberry passion</label>
+						<input type="checkbox" name="helado5" value="helado5">
+						<label for="">Fresh blueberry</label>
+						<input type="checkbox" name="helado6" value="helado6">
+					</fieldset>
+					<button type="reset" value="Cancelar" class="btn btn-primary btn-lg">Cancelar</button>
+					<button type="submit" value="Enviar" class="btn btn-primary btn-lg">Enviar</button>
+				</form>
+			</div>
+			<!-- cierra formulario -->
+
+			<!-- inicia aside -->
+
+			<aside class="col-lg-4 bg-dark">
+				<article>
+						<h3>Origen del producto</h3>
+						<p>Los orígenes del helado tailandés se sitúan a finales de la década de 1990, cuando los vendedores ambulantes de los mercados nocturnos de Phuket comenzaron a elaborarlo como un producto artesanal.</p>
+						<a href="Nosotros.html" class="btn btn-outline-primary btn-lg mb-2">Ver mas</a>
+						
+				</article>
+			</aside>
+
+			<!-- cierra aside -->		
+		</div>
+	</div>
+		<!-- inicia footer -->
+		
+	<footer>
+		<img src="imagenes/logoPie.png" alt="Thailand ice cream rolls">
+		<div>
+			<a href="https://www.facebook.com" target="blank">
+				<img src="imagenes/facebook.png" alt="logo de facebook">
+			</a>
+			<a href="https://www.instagram.com" target="blank">
+				<img src="imagenes/instagram.png" alt="logo de instagram">
+			</a>
+		</div>
+		
+	</footer>
+
+	<!-- cierra footer -->
+
+
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</body>
+</html>
